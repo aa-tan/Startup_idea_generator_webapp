@@ -1,2 +1,4 @@
 lib/
 .DS_store
+nohup.out
+server
