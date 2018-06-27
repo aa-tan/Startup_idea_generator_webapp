@@ -1,0 +1,27 @@
+body {
+    color: #EEE5E9;
+    background-color: #2D3047;
+    font-family: 'Roboto', sans-serif;
+    text-align: center
+}
+
+.content {
+    margin: 0 auto;
+}
+
+#text {
+    display: block;
+}
+
+.submit {
+    margin-top: 10vh;
+}
+
+.textbox {
+    width: 80vw;
+    height: 40vh;
+    margin: 0 auto;
+    margin-top: 10vh;
+    border: #EEE5E9;
+    border-style: solid;
+}

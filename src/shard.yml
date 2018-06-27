@@ -1,0 +1,22 @@
+name: server
+version: 0.1.0
+
+# authors:
+#   - Aaron Tan <access@atan.moe>
+
+# description: |
+#   Short description of server
+
+dependencies:
+    pg:
+        github: will/crystal-pg
+        version: "~> 0.5"
+    kemal:
+        github: kemalcr/kemal   
+
+# development_dependencies:
+#   webmock:
+#     github: manastech/webmock.cr
+
+# license: MIT
+
