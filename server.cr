@@ -58,6 +58,15 @@ clients = [
     "taxidermists"
 ]
 
+error 404 do
+  "404 Error"
+end
+
+error 403 do
+  "Access Forbidden!"
+end
+
+
 get "/" do |env|
     render "src/views/main.ecr", "src/views/layouts/layout.ecr"
 end
@@ -77,7 +86,6 @@ def get_response(tech, response, languages, clients)
     end
     {"first" => first, "second" => second}
 end
-
 
 def get_random(arr)
     arr[Random.rand(arr.size)]
