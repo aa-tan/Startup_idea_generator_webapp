@@ -12,8 +12,4 @@ function generate(){
     xhttp.send();
 }
 
-function get_random(arr){
-    return arr[Math.floor(Math.random() * arr.length)]
-}
-
-window.onload(generate())
+window.onload = generate()
