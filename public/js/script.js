@@ -11,5 +11,9 @@ function generate(){
     xhttp.open("GET", "/new", true);
     xhttp.send();
 }
-
+document.body.onkeyup = function(e){
+    if(e.which == 32){
+        generate()
+    }
+}
 window.onload = generate()
