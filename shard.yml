@@ -8,9 +8,6 @@ version: 0.1.0
 #   Short description of server
 
 dependencies:
-    pg:
-        github: will/crystal-pg
-        version: "~> 0.5"
     kemal:
         github: kemalcr/kemal   
 
