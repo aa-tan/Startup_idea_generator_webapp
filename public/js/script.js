@@ -16,4 +16,8 @@ document.body.onkeyup = function(e){
         generate()
     }
 }
-window.onload = generate()
+window.onload = function (){
+    document.getElementById("center").innerHTML = "but"
+    generate()
+    
+}
