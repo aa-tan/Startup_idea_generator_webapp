@@ -1,22 +1,25 @@
 # Startup Idea Generator
-Simple example app using Crystal-lang as a web framework
+Simple example app using Crystal-lang and Kemal as a web framework
 
 ## Building
 First clone the repo.
 
 ```console
-git clone https://github.com/aa-tan/Startup_idea_generator_webapp.git
+$ git clone https://github.com/aa-tan/Startup_idea_generator_webapp.git
 ```
 
-Then depending on running as development or building for production.
+Then depending on if you're running as development or building for production.
 
 ```console
-For testing locally
-$ crystal run server.cr
+For testing
+$ crystal run src/server.cr
 
-For production
+To build and run (omit the --release if building for development)
 $ crystal build --release server.cr
 
-To run compiled binary simply
+If ready to run for production, change the environment variable
+$ export KEMAL_ENV=production
+
+Otherwise, run with
 $ ./server
 ```
