@@ -1,4 +1,19 @@
 module Startup
+  def get_response(tech, response, languages, clients)
+    first = get_random(tech)
+    second = get_random(response)
+    if second == " coded using "
+        second += get_random(languages)
+    elsif second == " for "
+        second += get_random(clients)
+    end
+    {"first" => first, "second" => second}
+  end
+
+  def get_random(arr)
+    arr[Random.rand(arr.size)]
+  end
+
   TECH = [
     "A flower company ",
     "Cryptocurrency ",
